@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+ 
+/* Utility classes*/
+.centered {
+  text-align: center
+}
+
+.container {
+  max-width: 1024px;
+  margin:0 auto;
+}
+
+.button {
+  text-transform: uppercase;
+  padding:10px;
+  margin:0px 5px;
+  border:none;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.primary {
+  background-color: #e67e22;
+}
+
+/*End*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  margin:2rem 0 3rem;
+  font-weight: 400
+}
+
+*:focus { 
+  outline: none;
+  box-shadow: 0 5 10px #e67e22;
+}
+
+.todolist {
+  width:33%;
+  margin:auto;
+}
+
+.todo-entry {
+  width: 85%;
+  height: 30px;
+  font-size: 14pt;
+  border:none;
+  border-bottom: 2px solid #e67e22;
+}
+
+.todo-button {
+  border-radius: 30px;
+  font-size: 20pt;
+  padding: 0px 10px 4px 10px;
+}
+
+ul {
+  list-style: none;
+}
