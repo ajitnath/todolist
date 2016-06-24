@@ -62,4 +62,21 @@ h1, h2, h3, h4, h5 {
 
 ul {
   list-style: none;
+  margin-top:4rem;
+  text-indent: -42px;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  text-align: left;  
+}
+
+.fa-close {
+  float: right;
+  font-size: 21px;
+  color: #e67e22;
+}
+
+.todo-done {
+  color: #e1e1e1;
 }

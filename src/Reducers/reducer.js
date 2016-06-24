@@ -16,8 +16,7 @@ export default function(todos=init, action) {
         } else {
           return t;
         }
-      }
-      )
+      })
 
     case 'CLEAR_TODO': 
       // TODO remove the element from the array actually
