@@ -42,12 +42,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .todolist {
-  width:33%;
+  /*width:33%;*/
   margin:auto;
 }
 
+.todolist form {
+  text-align:center;
+}
+
 .todo-entry {
-  width: 85%;
+  width: 250px;
   height: 30px;
   font-size: 14pt;
   border:none;
@@ -62,19 +66,41 @@ h1, h2, h3, h4, h5 {
 
 ul {
   list-style: none;
+  margin:auto;
   margin-top:4rem;
-  text-indent: -42px;
+  /*text-indent: -42px;*/
+  max-width: 500px;
+
 }
 
 ul li {
   margin-bottom: 1rem;
   text-align: left;  
+  font-size: 14pt;
+}
+
+.checkbox {
+  /*float: left;*/
+  margin-right: 20px;
+}
+
+input[type="checkbox"] {
+  position:absolute;
+  margin-left: -20px;
+  margin-top: 8px;
 }
 
 .fa-close {
-  float: right;
+  /*float: right;*/
   font-size: 21px;
   color: #e67e22;
+  margin-left:25px;
+  position:absolute;
+  margin-top: 3px; 
+}
+
+.todo {
+
 }
 
 .todo-done {

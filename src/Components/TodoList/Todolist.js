@@ -1,6 +1,6 @@
 import React from 'react';
 import Todo from './todo'
-import {FormGroup, FormControl, Button} from 'react-bootstrap'
+import {FormGroup, FormControl, Button, Checkbox} from 'react-bootstrap'
 
 const Todolist = (props) =>   {
   const { todos, toggleTodo, clearTodo, addTodo } = props;
@@ -16,7 +16,10 @@ const Todolist = (props) =>   {
     
     if (review['todo-input'] !== '') {
       addTodo(review['todo-input']);
-    }    
+    } 
+    else {
+      alert('Todo not valid');
+    }   
   };
 
   // This function syntax is confusing
@@ -34,9 +37,11 @@ const Todolist = (props) =>   {
       </form>
       <ul >
         {todos.map(t => (
-          <li key={t.get('id')}
-            className='todo__item' >
-            <input onClick={toggleClick(t.get('id'))} type="checkbox" />  <Todo todo={t.toJS()} /> <i className="fa fa-close" onClick={clearClick(t.get('id'))} />
+          <li key={t.get('id')} className='todo__item' >
+            <Checkbox onClick={toggleClick(t.get('id'))} >  
+                <Todo todo={t.toJS()} /> 
+                <i className="fa fa-close" onClick={clearClick(t.get('id'))} />
+            </Checkbox>
           </li>
         ))}
       </ul>
